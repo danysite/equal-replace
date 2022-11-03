@@ -4,7 +4,7 @@ import exurl
 
 
 file = sys.argv[1]
-payload = "FUZZ"
+payload = "FUZZ" #change with sys.argv[2] if u use manual insert payload ;*
 
 with open(file, 'r') as domain:
 		splitting_urls = exurl.split_urls(domain, payload)
